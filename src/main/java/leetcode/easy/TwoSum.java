@@ -42,9 +42,7 @@ public class TwoSum {
                 this.setResult(this.differenceMap.get(nums[i]),i);
                 return this.getResult();
             }else{
-
                 this.differenceMap.put(target-nums[i],i);
-                System.out.println(this.differenceMap);
             }
         }
         return this.getResult();

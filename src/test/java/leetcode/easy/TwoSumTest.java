@@ -30,7 +30,14 @@ public class TwoSumTest {
     }
     @Test
     public void twoSumCondition2(){
-        this.result=this.ts.solution(new int[]{2,7,11,15},9 );
+        this.result=this.ts.solution(new int[]{3,2,4},6 );
+        Arrays.sort(this.result);
+        assertArrayEquals(new int[]{1,2},this.result);
+    }
+
+    @Test
+    public void twoSumCondition3 (){
+        this.result=this.ts.solution(new int[]{3,3},6 );
         Arrays.sort(this.result);
         assertArrayEquals(new int[]{0,1},this.result);
     }
